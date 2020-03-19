@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nhập xuất họ tên dùng javascript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<script>
+	var enter = "<br />";
+	// String.prototype.locName = function(){
+	// 	var realName = this;
+	// 	realName = realName.replace(/^\s+/img,"");
+	// 	realName = realName.replace(/\s+$/img,"");
+	// 	realName = realName.replace(/\s+/img," ");
+	// 	console.log(realName.length);
+	// }
+
+	// function splitName(){
+	// 	var fullName = document.getElementById('full_name').value;
+	// 	// document.getElementById('result').innerHTML = fullName.locName();
+	// 	console.log(fullName.length);
+	// }
+	var codau = "Lê Hữu Luân";
+	var khongdau = "Le Huu Luan";
+	document.write(codau.length + enter + khongdau.length +enter);
+</script>
+
+
+<body>
+	<div class="container">
+		<div class="container__form">
+			<input type="text" id="full_name">
+			<button onClick ="splitName()" class="btn btn-danger">Xuất họ tên</button>
+		</div>
+		<div id="result">
+		</div>
+	</div>
+</body>
+</html>
